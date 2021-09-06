@@ -1,3 +1,6 @@
+# Device path
+DEVICE_PATH := device/oppo/PCLM10
+
 # For building with minimal manifest
 ALLOW_MISSING_DEPENDENCIES := true
 
@@ -32,9 +35,9 @@ BOARD_KERNEL_TAGS_OFFSET := 0x00000100
 BOARD_RAMDISK_OFFSET := 0x01000000
 BOARD_KERNEL_IMAGE_NAME := Image-dtb
 
-TARGET_PREBUILT_KERNEL := device/oppo/PCLM10/prebuilt/Image-dtb
+TARGET_PREBUILT_KERNEL := $(DEVICE_PATH)/prebuilt/kernel
 BOARD_INCLUDE_RECOVERY_DTBO := true
-BOARD_PREBUILT_DTBOIMAGE := device/oppo/PCLM10/prebuilt/dtbo.img
+BOARD_PREBUILT_DTBOIMAGE := $(DEVICE_PATH)/prebuilt/dtbo
 
 #System as root
 BOARD_BUILD_SYSTEM_ROOT_IMAGE := true

@@ -15,9 +15,9 @@
 #
 
 COMMON_LUNCH_CHOICES := \
-    omni_PCLM10-userdebug \
-    omni_PCLM10-eng
+    twrp_PCLM10-userdebug \
+    twrp_PCLM10-eng
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/omni_PCLM10.mk
+    $(LOCAL_DIR)/twrp_PCLM10.mk
 
