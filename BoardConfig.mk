@@ -66,10 +66,7 @@ TARGET_USERIMAGES_USE_F2FS := true
 # cryption
 TW_INCLUDE_CRYPTO := true
 TARGET_HW_DISK_ENCRYPTION := true
-TW_INCLUDE_FBE := true
-TARGET_CRYPTFS_HW_PATH := vendor/qcom/opensource/commonsys/cryptfs_hw
-TARGET_PROVIDES_KEYMASTER := true
-TARGET_KEYMASTER_WAIT_FOR_QSEE := true
+TW_INCLUDE_CRYPTO_FBE := true
 
 # Hack: prevent anti rollback
 PLATFORM_SECURITY_PATCH := 2099-12-31
